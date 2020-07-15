@@ -15,11 +15,20 @@ const opt = {
 
 }
 
+const options = {
+    completado: {
+        alias: 'c',
+        default: true,
+        type: 'boolean'
+    }
+}
+
 const argv = require('yargs')
 
 .command('crear', 'Crea una tarea', opt)
     .command('actualizar', 'Actualiza una tarea', opt)
     .command('borrar', 'Elimina una tarea', opt)
+    .command('listar', 'Muestra tareas por filtro', options)
     .help()
     .argv;
 

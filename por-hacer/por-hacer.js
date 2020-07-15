@@ -40,8 +40,11 @@ const crear = (descripcion) => {
 }
 
 //Muestra todas las tareas que existen en el archivo JSON
-const getListado = () => {
+const getListado = (completado = true) => {
     cargarDB();
+
+    let listadoNuevo = listadoPorHacer.filter(tareas => tareas.completado === completado)
+    listadoPorHacer = listadoNuevo
     return listadoPorHacer;
 
 }

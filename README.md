@@ -2,7 +2,7 @@
 
 Ejercicios del curso
 
-Recuerda instalar los paqutes de node
+Recuerda instalar los paquetes de node
 
 ````````````````
 npm install
